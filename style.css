@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'connexion';
+    src: url('polices/Quicksand-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rubik';
+    src: url('polices/rubik.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p
+{
+    font-size: 0.8em;
+    font-family: "Courier new", "Arial Black", Arial;
+}
+.logo
+{
+    float: left;
+}
+body
+{
+    background-color: white
+}
+.titre
+{
+    background-color: white;
+    font-family: connexion, "Courier new", "Arial Black", Arial;
+    width: 700px;
+}
+a:hover
+{
+    border-left: 3px solid skyblue;
+    color:red;  
+}
+.titre:hover
+{
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 20px;
+    
+}
+a:active
+{
+    color: blue;
+    border-left: 3px solid red;
+}
+a:visited
+{
+    color: black;
+}
+.rubik
+{
+    font-family: rubik, "Courier new", "Arial Black", Arial;
+}
+.legende
+{
+    font-family: connexion, "Courier new", "Arial Black", Arial;
+}
+.deuxliens
+{
+    font-size: 13px;
+}
