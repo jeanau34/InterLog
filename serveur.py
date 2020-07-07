@@ -1,13 +1,13 @@
 import http.server
 import socketserver
 
-port = input("Quel est le port du serveur ? : ")
+port = (80)
 
 address = ("", int(port))
 
 handler = http.server.SimpleHTTPRequestHandler
 httpd = socketserver.TCPServer(address, handler)
 
-print("Serveur démarré sur le port ", port)
+print("Serveur demarré sur le port ", port)
 
 httpd.serve_forever()

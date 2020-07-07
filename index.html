@@ -4,36 +4,45 @@
 <head>
     <meta charset="utf-8"> 
     <link rel="stylesheet" href="style.css" />
-    <title>Connexion - Interpic</title> 
+    <title>Connexion - Interlog</title> 
 </head>
 
 <body> 
+    <ul id="nav">
+	<li><a href="#">Connexion</a></li>
+	<li><a onclick="open('modeEmploi.pdf', 'Popup', 'scrollbars=1,resizable=1,height=610,width=770'); return false;" href="modeEmploi.pdf">Utilisation</a></li>
+	<li><a href="#">Reglement</a></li>
+	<li><a href="#">Contact</a></li>
+</ul>
   
 
 <center class="logo">
-    <br>
-    <br>
+    
 
-    <img src="images/logo.png" alt="Bienvenue sur Interpic !" /> 
+    <img src="images/logo.png" alt="Bienvenue sur Interlog !" /> 
     
 </center>
 <header>
 <h1 class="titre">Connexion à 
-    <strong>Interpic</strong>
+    <strong>Interlog</strong>
 </h1>
 </header>
-<div>
-<form>
-    <fieldset>
+<div class="identification">
+<form method="post" action="traitement.php">
+    <fieldset class="fieldsetM">
         <legend class="legende">Vos informations de connexion</legend>
     <p>
     <label class="rubik" for="mail">Adresse mail : </label>
-    <input placeholder="nom@example.com" type="email" name="mail" label="mail" >
+    <input placeholder="Votre adresse mail" type="email" name="mail" label="mail" required >
     </p>
     <p>
     <label class="rubik" for="mdp">Mot de passe : </label>
-    <input placeholder="Mot de passe confidentiel" type="password" name="mdp" label="mdp" >
+    <input placeholder="Votre mot de passe" type="password" name="mdp" label="mdp" required >
     </p>
+        <p>
+        <label class="rubik" for="confirmer"></label>
+            <input type="submit" name="confirmer" label="confirmer">
+        </p>
    </fieldset> 
     
     </form>    

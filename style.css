@@ -1,3 +1,15 @@
+h1 {
+  border: none;
+
+  
+}
+.titre {
+  border: none;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  
+}
 @font-face {
     font-family: 'connexion';
     src: url('polices/Quicksand-Regular.otf');
@@ -18,7 +30,13 @@ p
 }
 .logo
 {
+    position:relative;
+    
     float: left;
+    margin-top: 85px
+    
+    
+    
 }
 body
 {
@@ -30,10 +48,14 @@ body
     font-family: connexion, "Courier new", "Arial Black", Arial;
     width: 700px;
 }
+a:hover:not(#nav li)
+{
+    border-left: 1px solid grey;
+    color:black;  
+}
 a:hover
 {
-    border-left: 3px solid skyblue;
-    color:red;  
+    color:black;  
 }
 .titre:hover
 {
@@ -44,13 +66,15 @@ a:hover
 }
 a:active
 {
-    color: blue;
-    border-left: 3px solid red;
-}
-a:visited
-{
     color: black;
+    
 }
+a:active:not(#nav li)
+{
+    
+    border-left: 2px solid black;
+}
+
 .rubik
 {
     font-family: rubik, "Courier new", "Arial Black", Arial;
@@ -58,8 +82,112 @@ a:visited
 .legende
 {
     font-family: connexion, "Courier new", "Arial Black", Arial;
+    font-size: 13px;
 }
 .deuxliens
 {
     font-size: 13px;
+    
+}
+
+a
+{
+    color: grey;
+}
+
+
+
+
+
+
+
+@keyframes bg {
+    0% {
+        background-size:    0 2px,
+                            2px 0,
+                            0 2px,
+                            2px 0;
+        
+    }
+    25% {
+        background-size:    100% 2px,
+                            2px 0,
+                            0 2px,
+                            2px 0;
+        
+    }
+    50% {
+        background-size:    100% 2px,
+                            2px 100%,
+                            0 2px,
+                            2px 0;
+    }
+    75% {
+        background-size:    100% 2px,
+                            2px 100%,
+                            100% 2px,
+                            2px 0;
+    }
+    100% {
+        background-size:    100% 2px,
+                            2px 100%,
+                            100% 2px,
+                            2px 100%;
+    }
+}
+
+.fieldsetM 
+{
+    border-radius: 20px
+}
+
+.identification {
+    
+    width: 25%;
+    margin: 2rem auto;
+    padding: 2em;
+    
+    background-repeat: no-repeat;
+    background-image:   linear-gradient(to right, black 100%, black 100%),
+                        linear-gradient(to bottom, black 100%, black 100%),
+                        linear-gradient(to right, black 100%, black 100%),
+                        linear-gradient(to bottom, black 100%, black 100%);
+    background-size:    100% 2px,
+                        2px 100%,
+                        100% 2px,
+                        2px 100%;
+    background-position:    0 0,
+                            100% 0,
+                            100% 100%,
+                            0 100%;
+    animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
+    animation-play-state: paused;
+    
+    
+}
+
+.identification:hover {
+    
+    animation-play-state: running;
+}
+
+#nav {
+	padding: 0; margin: 0;
+	text-align: center; /* centrer le texte */
+}
+#nav li {
+	display: inline;
+	list-style: none;
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+    border-right: 1px black solid;
+    border-left: 1px black solid;
+    background-color: #f7f7f7;
+}
+#nav a {
+	display:inline-block;
+	margin: 0 30px;
+}
+#nav li:hover {
+	background-color: #f2f2f2;
 }
